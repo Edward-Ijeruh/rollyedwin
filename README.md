@@ -11,13 +11,13 @@ This repository contains the official website for **RollyEdwin Integrated Servic
 
 ---
 
-## 🌍 Live Deployment
+## Live Deployment
 
 (Coming soon)
 
 ---
 
-## 🎨 Tech Stack
+## Tech Stack
 
 **Frontend:** HTML5, TailwindCSS, JavaScript  
 **Layout:** Responsive Flexbox & CSS Grid  
@@ -25,7 +25,7 @@ This repository contains the official website for **RollyEdwin Integrated Servic
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ```bash
 # Clone the repository

@@ -17,22 +17,6 @@ This repository contains the official website for **RollyEdwin Integrated Servic
 
 ---
 
-## 📁 Project Structure
-
-├── assets/
-│ ├── ceo.jpg
-│ ├── general-manager.jpg
-│ ├── secretary.jpg
-│ └── favicon.ico
-├── pages/
-│ ├── about.html
-│ ├── contact.html
-│ └── services.html
-├── index.html
-└── script.js
-
----
-
 ## 🎨 Tech Stack
 
 **Frontend:** HTML5, TailwindCSS, JavaScript  

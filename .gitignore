@@ -1,0 +1,9 @@
+## .gitignore
+
+# Build / cache / temp directories
+dist/
+.cache/
+.vscode/
+
+# Logs
+*.log

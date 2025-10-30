@@ -1,0 +1,356 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>RollyEdwin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-[#fcf8f8] group/design-root overflow-x-hidden"
+      style="font-family: 'Work Sans', 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="sticky top-0 z-50 flex items-center justify-between border-b border-b-[#f3e7e7] bg-[#fcf8f8]/95 backdrop-blur px-6 sm:px-10 py-3"
+        >
+          <!-- Left: Logo -->
+          <div class="flex items-center gap-4 text-[#1b0e0e]">
+            <div class="size-5">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-lg font-bold">RollyEdwin</h2>
+          </div>
+
+          <!-- Desktop Nav -->
+          <div class="hidden sm:flex items-center justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a
+                href="../index.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Services</a
+              >
+              <a
+                href="about.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >About Us</a
+              >
+              <a
+                href="contact.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Contact</a
+              >
+            </div>
+            <!-- <button
+              class="rounded-lg h-10 px-4 bg-[#ea2a2a] text-white text-sm font-bold hover:scale-105 transition-transform"
+            >
+              Get a Quote
+            </button> -->
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="menu-btn"
+            class="sm:hidden flex items-center justify-center text-[#1b0e0e] focus:outline-none"
+          >
+            <svg
+              id="menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            class="absolute top-full left-0 w-full bg-[#fcf8f8] shadow-lg flex flex-col items-stretch transition-all duration-300 ease-in-out opacity-0 invisible"
+          >
+            <a
+              href="../index.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Services</a
+            >
+            <a
+              href="about.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >About Us</a
+            >
+            <a
+              href="contact.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Contact</a
+            >
+
+            <!-- Divider above button
+            <div class="my-2 py-2 flex justify-center">
+              <button
+                class="rounded-lg h-10 px-6 bg-[#ea2a2a] text-white text-sm font-bold hover:scale-105 transition-transform"
+              >
+                Get a Quote
+              </button>
+            </div> -->
+          </div>
+        </header>
+        <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p
+                  class="text-[#1b0e0e] tracking-light text-[32px] font-bold leading-tight"
+                >
+                  About Us
+                </p>
+                <p class="text-[#994d4d] text-sm font-normal leading-normal">
+                  RollyEdwin Integrated Services Ltd. is a leading provider of
+                  integrated solutions in architecture & real estate, interior
+                  design, solar street lighting, cleaning & fumigation, and
+                  table water services. Our commitment to excellence and
+                  innovation drives us to deliver exceptional results for our
+                  clients.
+                </p>
+              </div>
+            </div>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Our Story
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Founded in 2005, RollyEdwin Integrated Services Ltd. began with a
+              vision to transform spaces and enhance lives through innovative
+              and sustainable solutions. Over the years, we have grown from a
+              small startup to a reputable company, known for our quality,
+              reliability, and customer-centric approach. Our journey has been
+              marked by continuous learning, adaptation, and a relentless
+              pursuit of excellence.
+            </p>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Our Mission
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Bringing your building designs and finishing imagination to
+              reality, steady electricity, natural water with good environment
+              through cleaning and fumigation, car sales and general
+              contractors.
+            </p>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Our Vision
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Client satisfaction through provision of reliable services and
+              products whilst assuring honesty, integrity, quality and
+              affordability.
+            </p>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Our Team
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Our team comprises experienced professionals with diverse
+              expertise in architecture, interior design, engineering, and
+              service management. We foster a collaborative environment where
+              creativity and innovation thrive, ensuring that every project
+              benefits from a wealth of knowledge and skills.
+            </p>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <div class="flex flex-col gap-3 text-center pb-3">
+                <div class="px-4">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                    style="background-image: url('../assets/ceo.jpg')"
+                  ></div>
+                </div>
+                <div>
+                  <p
+                    class="text-[#1b0e0e] text-base font-medium leading-normal"
+                  >
+                    Roland Thompson
+                  </p>
+                  <p class="text-[#994d4d] text-sm font-normal leading-normal">
+                    CEO
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 text-center pb-3">
+                <div class="px-4">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                    style="
+                      background-image: url('../assets/general-manager.jpg');
+                    "
+                  ></div>
+                </div>
+                <div>
+                  <p
+                    class="text-[#1b0e0e] text-base font-medium leading-normal"
+                  >
+                    Edwin Carter
+                  </p>
+                  <p class="text-[#994d4d] text-sm font-normal leading-normal">
+                    General Manager
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 text-center pb-3">
+                <div class="px-4">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                    style="background-image: url('../assets/secretary.jpg')"
+                  ></div>
+                </div>
+                <div>
+                  <p
+                    class="text-[#1b0e0e] text-base font-medium leading-normal"
+                  >
+                    Sophia Bennett
+                  </p>
+                  <p class="text-[#994d4d] text-sm font-normal leading-normal">
+                    Secretary
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="bg-[#1b0e0e] text-[#fcf8f8] px-6 sm:px-16 py-10 mt-10">
+          <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <!-- Brand -->
+            <div>
+              <h3 class="text-xl font-bold mb-2">RollyEdwin</h3>
+              <p class="text-sm text-[#d6cccc] leading-relaxed">
+                Delivering dependable solutions in architecture, interior
+                design, solar lighting, cleaning, fumigation, table water
+                services, and more.
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h4 class="text-base font-semibold mb-3">Quick Links</h4>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="../index.html"
+                    class="hover:text-[#ea2a2a] transition"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="hover:text-[#ea2a2a] transition"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" class="hover:text-[#ea2a2a] transition"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" class="hover:text-[#ea2a2a] transition"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+              <h4 class="text-base font-semibold mb-3">Contact</h4>
+              <ul class="space-y-2 text-sm text-[#d6cccc]">
+                <li>
+                  Email:
+                  <span class="text-[#fcf8f8]"
+                    >rollyedwincustomercare@gmail.com</span
+                  >
+                </li>
+                <li>
+                  Phone:
+                  <span class="text-[#fcf8f8]">
+                    08033270531, 08182348126, 09099589587</span
+                  >
+                </li>
+                <li>Location: Nigeria</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-[#4b3e3e] mt-10 pt-4 text-center text-sm text-[#d6cccc]"
+          >
+            © <span id="year"></span> RollyEdwin Integrated Services Ltd. All
+            rights reserved.
+          </div>
+        </footer>
+
+        <script>
+          document.getElementById("year").textContent =
+            new Date().getFullYear();
+        </script>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>

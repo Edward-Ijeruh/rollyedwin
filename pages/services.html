@@ -1,0 +1,451 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>RollyEdwin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-[#fcf8f8] group/design-root overflow-x-hidden"
+      style="font-family: 'Work Sans', 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="sticky top-0 z-50 flex items-center justify-between border-b border-b-[#f3e7e7] bg-[#fcf8f8]/95 backdrop-blur px-6 sm:px-10 py-3"
+        >
+          <!-- Left: Logo -->
+          <div class="flex items-center gap-4 text-[#1b0e0e]">
+            <div class="size-5">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-lg font-bold">RollyEdwin</h2>
+          </div>
+
+          <!-- Desktop Nav -->
+          <div class="hidden sm:flex items-center justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a
+                href="../index.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Services</a
+              >
+              <a
+                href="about.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >About Us</a
+              >
+              <a
+                href="contact.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Contact</a
+              >
+            </div>
+            <!-- <button
+              class="rounded-lg h-10 px-4 bg-[#ea2a2a] text-white text-sm font-bold hover:scale-105 transition-transform"
+            >
+              Get a Quote
+            </button> -->
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="menu-btn"
+            class="sm:hidden flex items-center justify-center text-[#1b0e0e] focus:outline-none"
+          >
+            <svg
+              id="menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            class="absolute top-full left-0 w-full bg-[#fcf8f8] shadow-lg flex flex-col items-stretch transition-all duration-300 ease-in-out opacity-0 invisible"
+          >
+            <a
+              href="../index.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Services</a
+            >
+            <a
+              href="about.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >About Us</a
+            >
+            <a
+              href="contact.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Contact</a
+            >
+
+            <!-- Divider above button
+            <div class="my-2 py-2 flex justify-center">
+              <button
+                class="rounded-lg h-10 px-6 bg-[#ea2a2a] text-white text-sm font-bold hover:scale-105 transition-transform"
+              >
+                Get a Quote
+              </button>
+            </div> -->
+          </div>
+        </header>
+        <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p
+                  class="text-[#1b0e0e] tracking-light text-[32px] font-bold leading-tight"
+                >
+                  Our Services
+                </p>
+                <p class="text-[#994d4d] text-sm font-normal leading-normal">
+                  Explore the comprehensive range of services offered by
+                  RollyEdwin Integrated Services Ltd, designed to meet your
+                  diverse needs with excellence and innovation.
+                </p>
+              </div>
+            </div>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Architecture and Real Estate
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              RollyEdwin Integrated Services Ltd provides comprehensive
+              architectural and real estate solutions, from conceptual design to
+              project completion. Our team of experienced architects and real
+              estate professionals ensures that every project is executed with
+              precision and creativity, delivering spaces that are both
+              functional and aesthetically pleasing.
+            </p>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAd3pPs0RaejLC5gNhh4yOHIYrZ8H4co7hDVSDNGDB9Y-3ymUGHLqral7E2EbL9UQaI9bD_HaM7yYylaKVfIiJCA_r4xAzg8bdoQSNX9hWhl8H_ZlozOzrQoZlhBPKCz-Takj39CMlNx9IwOovAGMUYwlVJ2vpNHLzHpmThM95mV0sTEnnzDbrwQCtIRfLCwjb6sqkRzSgIgg2eMjgkGxXTzatkKH9oIJjE2v0wW2tiMUbAYxHcLVpDKi6mL0wPo0APrTq5uKb471_t');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhETUGyq6GYPOLsUNecqBuYl8GoFQGnjKxo30vVmshDcSLbBrCr2vID72prCM7RUEUB-1g7G6xBu_VrbTBCKELkwO8bvwQFCrmvYX-6zPlFZ2JGgh1sQGD8k1o5oUYEOsFAIRaSSaVc1HVsgUpwojS9oRCnHoQbDqnQ0hyIUgYC_TMuJvSVutIr2jPbG7KIYNPrPQgJJ7zAvALu0CiAvq3bE_VR2nBgQflAr75xIDXWDNbNTBv845w9liWTg5oU5g0XA8LtVId20sp');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCs9G9aVzV5mUd_Xc54uW57Lg9RVxWiOQUJILqAOZ0kOHjCA_Nyk-HGp_PQh2iuqAqmg2QUt5rZDgUK-VMF0tw3EImjv2lCYxZ8wcg7-MC65MbPZ_0lyl_AJUlfILyQTLLJxGmBkvxXoaSTDy8oEhNHmh01vt5Bbaj0fpP23KIGUxkeDPOdlG-u5m9cVGd3aHTkWB2Hy5qIYl5pa4152LXvBmuOtg0my_yE6jhJ7d8OvD5QMFOPI3zmDGySwLj8i1uvE0_349rfCw2n');
+                  "
+                ></div>
+              </div>
+            </div>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Interior Designs and Finishings
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Transform your interiors with our bespoke design and finishing
+              services. We specialize in creating unique and stylish spaces that
+              reflect your personal taste and lifestyle. Our services include
+              space planning, material selection, furniture design, and
+              installation, ensuring a seamless and stunning transformation.
+            </p>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwGXiND36j7EeXLq0oAiqrDc8KNEjG-FIcqZXAlL_twZRYMK0JVw0TK2pAAL2dyTAJmRJSJglrA_1OBwuoq_sr06Y58Bkkr7vrJ22NkGPuTTa-sRDpKkRT9ukhk44ttPgSdXLhgE6ehZTBl2lEqsUmrr4czDSqw0iOJEWsydSIAZKbGCPBwZOxQ63BnOybmpg4ezCXAw23i-fRmg9rjQRxRyyRlCZbSrFJaP_iqgwlOhQ__i5eo7l70XlIBBo3Bp-oHnQJ9qA2N7q1');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4SY0mnfqCCr2eW78WcFihpo8WutyaBF8GmNJr_55Ur9zSadZgrMttCxAKaX_7GlJlsLix3cMhLHRmq3L8DacVvaDJaFUUMq5ME6rqRkuqdEuYUL7zQreC9Lv_FA5ojdxwhYCNXic4UeuKdel6T-aTF8Ut5D_LNjADOBPucjtl_WaZvnpryo7u8Qy-6fmI3OgmekFEbY9gUVawhJPELcKiwfe-KdYQBxy3MFPlf3xOJVOK_M6z76YnF0BkLxkgNZRegbPpsLjq9OOj');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBa-nh9IGM_8C7rlnuG0vfuz7VoHgNsNmSYd1BEoD4TgS-NRRILnbvCHsG2e1Aew1IY3SYbv16ySUPTMVP3aOZwLTL2-f-DZ8vcM8N9qBSOOnqXgICl779yGxbJGXGXBPbZQSIFXJNqrFO0Ep3j8DgfCLa0DxiJqv4TcHB08tHsGljxtB1i1d9uTeXTVz-0QN4DzCG4goor-cXU88WVj2A3CXrs-fU6I_UBem6MoZGKeYq4cW03av0AoIHuF7WFvwymhE4eZsoOimBT');
+                  "
+                ></div>
+              </div>
+            </div>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Solar Street Lights
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Illuminate your surroundings with our eco-friendly solar street
+              lighting solutions. We offer a range of high-quality,
+              energy-efficient solar lights that are perfect for residential,
+              commercial, and public spaces. Our team handles everything from
+              site assessment to installation and maintenance, ensuring reliable
+              and sustainable lighting.
+            </p>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjOgC6th8Znf7NDEowFtblm8p784vUCbxtryFraNmT17uvXiVZUmHWo2zkHStTBohb3Gxql-kK86fN8iF3rBbK1i-TL9nCYHmZlac2elbA_nIFyjAXh7402dlcorsJpfdPAewfGJ_uzMbn793ivg626tA2eZv7hvximi2CMBSfdbWLV08YlejT2cIYIdOrngJFxz4U654NBbR1bTzA4AVpWtCbmTkS9cKRkpTPF1X-G3_uFND_Of1RI2UeJ66UXcaavW17ZwNxMift');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvr7d_VT8kEmJFFC7plZOTPewPXDNASE-KZJvt1p40EaTKwiYs_LC7m2puI4I8Gec8_H6878kQ62Bacbd5aq_UwW_KCySrJcZ2s-qLbP8RChLG0rhxnUQtGomFFg4VU9m8Ly3dMbQEq_4GRHLXK42_-2nJwUj5hU-x1PU_P-gQVI94S8aoX1H_qDAKncERRWDk6h6rvyL7o91gu5LUCHV6KTUpqCakyQJikp2YvoqgF8sNKp9GDGbu8uvo7l7I_ItSGa_ij8Y-PlQz');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDemhJ7Db32RUHuL5QbBXnlQuJZScI50cx7cPdIY9jwI8gLQ4EUgoY9t3myTdoolSais0_TGzdGuhNgboxIqQxI1-s0wEFWFxrXEDYG7ZpGeXHCJrZzIdYycz5tNtsYBgOXW01HhMR7wTZrdhwXD8qOTyttJlmWPafrKC-hqQZqqf8Ne2aTAzq9LP51_PnxwtDdo1ipfGsk5isUN1DQ14HAcfpTgEXknykiuzYYW9UjFVjUJXcORNRgyD-AoBWKYUkLR_THK0J8_SVi');
+                  "
+                ></div>
+              </div>
+            </div>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Cleaning and Fumigation
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Maintain a clean and healthy environment with our professional
+              cleaning and fumigation services. We use advanced techniques and
+              eco-friendly products to ensure thorough cleaning and effective
+              pest control. Our services are tailored to meet the specific needs
+              of homes, offices, and industrial facilities.
+            </p>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaDStUlKpzyj0A7_9HDniiY1dHEqs4tbc2-OixxytrJsZRe7-FIhlKCpn1JJc8r1h_yqyf1UBNFkrUmdAC_i1ybAO1-zuGsL0fVj2DJ4uaqdDGUh3sXL9ElrfzSRAYF8CSr1dWNsu3qveLaM0rlqpV7bA9BN20aYAhLA__iCnD5psMvJqlE-R01Str8nYQ6EVJT-i7Tm_Fl8tDRD-Oa5mQChveOqzj0O3vwob1aWiBci6QcRKj3aganX7J_T5Gt6zS-fL_53rkP7bZ');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBu2jZU6mgtV3fSdcrHWElAyaeLosKeiwKfF526lCYgDC4WJiOKjKITgIdadU3XJvQbfKeCyi-DbwBXc7908mJFV4p79AxnhXj_cxbx-sN7FCLZkAAGzrShO3SI0dVU7f85oItrFrTVQ4dwV1dQbrhZ_2pjcQU8LzyuOHO0YkqJQHmdiKHYFWNhobtyBwXUgHxP71Zfe6TU6sDraUG4LeRnJPUD7j9xeodrvR3IPn8-S3-yvpRHNLrn5nKi8IZuZXx2EmrcVzp8ssjZ');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDx3Tt-y5nGWGyURBUGf2nXYJcejuuNuUUOZJqckj09Cp_2I-b-13SJtPIyz62-9PebTwweiLi7WusqMmwn0QZpJj-tF381BXVqXWq91NHF8t9K4dh23__ZHEQslSYVWvfpKEnLbSt5h1QPzhT-zU1oLI_rQOTsT8gprjjpfzliee5BcJvKJgLNIILVM-4_Us8a6mTyxnCC8xGHDA9wZRyE36Tw3DUQlzhEjbVOCWMtBmN8b9ufo-8RprVKlRZ8OhaVcGhKT3XWRco7');
+                  "
+                ></div>
+              </div>
+            </div>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              MT Calvary Table Water
+            </h2>
+            <p
+              class="text-[#1b0e0e] text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Stay refreshed with MT Calvary Table Water, our premium quality
+              bottled water. Sourced from natural springs and purified using
+              state-of-the-art technology, our water is clean, crisp, and
+              perfect for hydration. We offer convenient delivery options for
+              homes and businesses, ensuring you always have access to pure
+              drinking water.
+            </p>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZ1OYB7DGk91zU06Sj6Mm3l_EiLKvGnAxs4mqJKNYvhF8LWPln6rC2fGqtx_-oQHiaSe_DXzXHV0DD-VQuUw7CFP1paJizaii57YyXrkkkvPwTQz6SjViVsz983iWZi38Sm4d1HnJvbRhPNgV-xsMvjCV1_EiWxj4JDrqYPbd8EIgRmiEej-ts-D8jrUVTCukHJsI8wWFr5cL4XyIYkrZTNPzsOALABzlyo8PID5ftpYfjtTpdVO3nJm5YvQLbGpWVAqjqnaOs6HBA');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_0xzNDsGWNfcsycq2h4_DD8pD-nnBccrQHtFE3eHyTYE_zrti7KtBnZgeFpXonvAGwG_cN1ZPiLycrE60DtYTkxs3p2a0y4xPjvUKvdj1bbK2clzJbdq3g9HHoIkv_vzomXfabiBxSXeRCHpneRRIT77wNjQ7PjSU8d5aEaTuXb0uyq-U73X7UuP8VFQH3GSBu58JIvltXy_uJXupKTA0IzmpYyD43KyoGNHBl3H712CA7Be9eZ9t2UwYSAat_0TQpN5GkWH6Opbo');
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJFkj7bsSOlGSUessaShvdFc7D0jvKH5y0JaoTUzjGEyHtO3lmmIc-A1rES0okyfDeIFjkwZSdc6pCyjyYzon-jnZHyQWnyIeQrM9R09j-2ryvGVU6H4hWXIzzjvGevyiKNbyil1_U3xcJ5rHeWKXUJyYLo7Y3PPaLMFvWMgOwB2Ca8cv1cInxU72yQV1H30cjqUtJXftblXgzomt5jmUPQSG7X7o4qzdxk7ns6Yq9fGFwuSnLLMkxgFNTWXHf5Nvjf_QvPKCnPL7L');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="bg-[#1b0e0e] text-[#fcf8f8] px-6 sm:px-16 py-10 mt-10">
+          <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <!-- Brand -->
+            <div>
+              <h3 class="text-xl font-bold mb-2">RollyEdwin</h3>
+              <p class="text-sm text-[#d6cccc] leading-relaxed">
+                Delivering dependable solutions in architecture, interior
+                design, solar lighting, cleaning, fumigation, table water
+                services, and more.
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h4 class="text-base font-semibold mb-3">Quick Links</h4>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="../index.html"
+                    class="hover:text-[#ea2a2a] transition"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="hover:text-[#ea2a2a] transition"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" class="hover:text-[#ea2a2a] transition"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" class="hover:text-[#ea2a2a] transition"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+              <h4 class="text-base font-semibold mb-3">Contact</h4>
+              <ul class="space-y-2 text-sm text-[#d6cccc]">
+                <li>
+                  Email:
+                  <span class="text-[#fcf8f8]"
+                    >rollyedwincustomercare@gmail.com</span
+                  >
+                </li>
+                <li>
+                  Phone:
+                  <span class="text-[#fcf8f8]">
+                    08033270531, 08182348126, 09099589587</span
+                  >
+                </li>
+                <li>Location: Nigeria</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-[#4b3e3e] mt-10 pt-4 text-center text-sm text-[#d6cccc]"
+          >
+            © <span id="year"></span> RollyEdwin Integrated Services Ltd. All
+            rights reserved.
+          </div>
+        </footer>
+
+        <script>
+          document.getElementById("year").textContent =
+            new Date().getFullYear();
+        </script>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>

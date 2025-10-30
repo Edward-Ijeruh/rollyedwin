@@ -1,0 +1,437 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>RollyEdwin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-[#fcf8f8] group/design-root overflow-x-hidden"
+      style="font-family: 'Work Sans', 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="sticky top-0 z-50 flex items-center justify-between border-b border-b-[#f3e7e7] bg-[#fcf8f8]/95 backdrop-blur px-6 sm:px-10 py-3"
+        >
+          <!-- Left: Logo -->
+          <div class="flex items-center gap-4 text-[#1b0e0e]">
+            <div class="size-5">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-lg font-bold">RollyEdwin</h2>
+          </div>
+
+          <!-- Desktop Nav -->
+          <div class="hidden sm:flex items-center justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a
+                href="index.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Home</a
+              >
+              <a
+                href="./pages/services.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Services</a
+              >
+              <a
+                href="./pages/about.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >About Us</a
+              >
+              <a
+                href="./pages/contact.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Contact</a
+              >
+            </div>
+            <!-- <button
+              class="rounded-lg h-10 px-4 bg-[#ea2a2a] text-white text-sm font-bold hover:scale-105 transition-transform"
+            >
+              Get a Quote
+            </button> -->
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="menu-btn"
+            class="sm:hidden flex items-center justify-center text-[#1b0e0e] focus:outline-none"
+          >
+            <svg
+              id="menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            class="absolute top-full left-0 w-full bg-[#fcf8f8] shadow-lg flex flex-col items-stretch transition-all duration-300 ease-in-out opacity-0 invisible"
+          >
+            <a
+              href="index.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Home</a
+            >
+            <a
+              href="./pages/services.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Services</a
+            >
+            <a
+              href="./pages/about.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >About Us</a
+            >
+            <a
+              href="./pages/contact.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Contact</a
+            >
+
+            <!-- Divider above button
+            <div class="my-2 py-2 flex justify-center">
+              <button
+                class="rounded-lg h-10 px-6 bg-[#ea2a2a] text-white text-sm font-bold hover:scale-105 transition-transform"
+              >
+                Get a Quote
+              </button>
+            </div> -->
+          </div>
+        </header>
+
+        <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style="
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.1) 0%,
+                        rgba(0, 0, 0, 0.4) 100%
+                      ),
+                      url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-Z3RkzzeWHxR16LXVW2Feyax1CisMK43mZ_aZPOpuu42Mds7h-sSbsQmE9zrv3s7pIeqiW4BreLr9-Du-ULNfmKNuE-qioisPwMh4jjmf_ZoQ6OwU4jlSwTXcZ8OkOw8XKBVw8ywJNoVQi3nrphOVJFJvBB09sbODkHlPn9zctPEjHlU00aXlDX0NRH-JaaxQSdAAKYrnH9qnx0SkZtCO0hkHE0HtJzHH0dEz-hkXc_MWbxQhDnz-pkxZr9RXQWAhm2EJLyvbzqlE');
+                  "
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Integrated Solutions for Your Needs
+                    </h1>
+                    <h2
+                      class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                    >
+                      RollyEdwin Integrated Services Ltd. offers a comprehensive
+                      suite of services, including architecture & real estate,
+                      interior design, solar street lighting, cleaning &
+                      fumigation, and table water solutions. We are committed to
+                      delivering excellence and innovation in every project.
+                    </h2>
+                  </div>
+                  <a
+                    href="./pages/services.html"
+                    class="flex min-w-[84px] max-w-[480px] items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#ea2a2a] text-[#fcf8f8] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:scale-105 transition-transform"
+                  >
+                    <span class="truncate">Explore Our Services</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h2
+              class="text-[#1b0e0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Our Services
+            </h2>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 place-items-stretch"
+            >
+              <!-- Card 1 -->
+              <div
+                class="flex flex-col rounded-lg border border-[#e7d0d0] bg-[#fcf8f8] p-5 hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-[#1b0e0e] flex-shrink-0">
+                    <!-- Icon -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22px"
+                      height="22px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-[#1b0e0e] text-base font-bold leading-tight">
+                    Architecture & Real Estate
+                  </h2>
+                </div>
+                <p class="text-[#994d4d] text-sm leading-normal">
+                  Innovative and sustainable architectural designs.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="flex flex-col rounded-lg border border-[#e7d0d0] bg-[#fcf8f8] p-5 hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-[#1b0e0e] flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22px"
+                      height="22px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M247.35,148.85l-48-112A8,8,0,0,0,192,32H64a8,8,0,0,0-7.35,4.85l-48,112A8,8,0,0,0,16,160H120v48H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V160h56v32a8,8,0,0,0,16,0V160h32a8,8,0,0,0,7.35-11.15ZM28.13,144,69.28,48H186.72l41.15,96Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-[#1b0e0e] text-base font-bold leading-tight">
+                    Interior Design
+                  </h2>
+                </div>
+                <p class="text-[#994d4d] text-sm leading-normal">
+                  Creative and functional interior design solutions.
+                </p>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="flex flex-col rounded-lg border border-[#e7d0d0] bg-[#fcf8f8] p-5 hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-[#1b0e0e] flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22px"
+                      height="22px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-[#1b0e0e] text-base font-bold leading-tight">
+                    Solar Street Lights
+                  </h2>
+                </div>
+                <p class="text-[#994d4d] text-sm leading-normal">
+                  Efficient and eco-friendly solar lighting systems.
+                </p>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="flex flex-col rounded-lg border border-[#e7d0d0] bg-[#fcf8f8] p-5 hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-[#1b0e0e] flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22px"
+                      height="22px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M235.5,216.81c-22.56-11-35.5-34.58-35.5-64.8V134.73a15.94,15.94,0,0,0-10.09-14.87L165,110a8,8,0,0,1-4.48-10.34l21.32-53a28,28,0,0,0-16.1-37,28.14,28.14,0,0,0-35.82,16,.61.61,0,0,0,0,.12L108.9,79a8,8,0,0,1-10.37,4.49L73.11,73.14A15.89,15.89,0,0,0,55.74,76.8C34.68,98.45,24,123.75,24,152a111.45,111.45,0,0,0,31.18,77.53A8,8,0,0,0,61,232H232a8,8,0,0,0,3.5-15.19ZM67.14,88l25.41,10.3a24,24,0,0,0,31.23-13.45l21-53c2.56-6.11,9.47-9.27,15.43-7a12,12,0,0,1,6.88,15.92L145.69,93.76a24,24,0,0,0,13.43,31.14L184,134.73V152c0,.33,0,.66,0,1L55.77,101.71A108.84,108.84,0,0,1,67.14,88Zm48,128a87.53,87.53,0,0,1-24.34-42,8,8,0,0,0-15.49,4,105.16,105.16,0,0,0,18.36,38H64.44A95.54,95.54,0,0,1,40,152a85.9,85.9,0,0,1,7.73-36.29l137.8,55.12c3,18,10.56,33.48,21.89,45.16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-[#1b0e0e] text-base font-bold leading-tight">
+                    Cleaning & Fumigation
+                  </h2>
+                </div>
+                <p class="text-[#994d4d] text-sm leading-normal">
+                  Comprehensive cleaning and fumigation services for various
+                  environments.
+                </p>
+              </div>
+
+              <!-- Card 5 -->
+              <div
+                class="flex flex-col rounded-lg border border-[#e7d0d0] bg-[#fcf8f8] p-5 hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-[#1b0e0e] flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22px"
+                      height="22px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M245.66,42.34l-32-32a8,8,0,0,0-11.32,11.32l1.48,1.47L148.65,64.51l-38.22,7.65a8.05,8.05,0,0,0-4.09,2.18L23,157.66a24,24,0,0,0,0,33.94L64.4,233a24,24,0,0,0,33.94,0l83.32-83.31a8,8,0,0,0,2.18-4.09l7.65-38.22,41.38-55.17,1.47,1.48a8,8,0,0,0,11.32-11.32ZM96,107.31,148.69,160,104,204.69,51.31,152ZM81.37,224a7.94,7.94,0,0,1-5.65-2.34L34.34,180.28a8,8,0,0,1,0-11.31L40,163.31,92.69,216,87,221.66A8,8,0,0,1,81.37,224ZM177.6,99.2a7.92,7.92,0,0,0-1.44,3.23l-7.53,37.63L160,148.69,107.31,96l8.63-8.63,37.63-7.53a7.92,7.92,0,0,0,3.23-1.44l58.45-43.84,6.19,6.19Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-[#1b0e0e] text-base font-bold leading-tight">
+                    Table Water Solutions
+                  </h2>
+                </div>
+                <p class="text-[#994d4d] text-sm leading-normal">
+                  High-quality and safe table water solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="@container">
+              <div
+                class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20"
+              >
+                <div class="flex flex-col gap-2 text-center">
+                  <h1
+                    class="text-[#1b0e0e] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                  >
+                    Ready to Transform Your Space?
+                  </h1>
+                  <p
+                    class="text-[#1b0e0e] text-base font-normal leading-normal max-w-[720px"
+                  >
+                    Contact us today to discuss your project and discover how
+                    RollyEdwin Integrated Services Ltd. can help you achieve
+                    your goals.
+                  </p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                  <div class="flex justify-center">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#ea2a2a] text-[#fcf8f8] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                    >
+                      <span class="truncate">Get Started</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#1b0e0e] text-[#fcf8f8] px-6 sm:px-16 py-10 mt-10">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <!-- Brand -->
+        <div>
+          <h3 class="text-xl font-bold mb-2">RollyEdwin</h3>
+          <p class="text-sm text-[#d6cccc] leading-relaxed">
+            Delivering dependable solutions in architecture, interior design,
+            solar lighting, cleaning, fumigation, table water services, and
+            more.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-base font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="index.html" class="hover:text-[#ea2a2a] transition"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/services.html"
+                class="hover:text-[#ea2a2a] transition"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/about.html"
+                class="hover:text-[#ea2a2a] transition"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/contact.html"
+                class="hover:text-[#ea2a2a] transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-base font-semibold mb-3">Contact</h4>
+          <ul class="space-y-2 text-sm text-[#d6cccc]">
+            <li>
+              Email:
+              <span class="text-[#fcf8f8]"
+                >rollyedwincustomercare@gmail.com</span
+              >
+            </li>
+            <li>
+              Phone:
+              <span class="text-[#fcf8f8]">
+                08033270531, 08182348126, 09099589587</span
+              >
+            </li>
+            <li>Location: Nigeria</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-[#4b3e3e] mt-10 pt-4 text-center text-sm text-[#d6cccc]"
+      >
+        © <span id="year"></span> RollyEdwin Integrated Services Ltd. All rights
+        reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

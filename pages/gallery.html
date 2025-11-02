@@ -1,0 +1,214 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Work+Sans:wght@400;500;700;900"
+    />
+    <title>RollyEdwin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body
+    style="font-family: 'Work Sans', 'Noto Sans', sans-serif"
+    class="bg-[#fcf8f8]"
+  >
+    <div class="relative flex flex-col min-h-screen">
+      <header
+        class="mx-auto gap-[45vw] sticky top-0 z-50 flex items-center justify-between border-b border-[#f3e7e7] bg-[#fcf8f8]/95 backdrop-blur px-6 sm:px-10 py-4"
+      >
+        <!-- Left: Logo -->
+        <div class="flex items-center gap-2 text-[#1b0e0e]">
+          <div class="size-5">
+            <img
+              src="../assets/rollyedwin-logo.jpeg"
+              alt="Logo"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <h2 class="text-lg font-bold">RollyEdwin</h2>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden sm:flex items-center gap-9">
+          <a
+            href="../index.html"
+            class="hover:text-[#ea2a2a] text-sm font-medium"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="hover:text-[#ea2a2a] text-sm font-medium"
+            >Services</a
+          >
+          <a href="about.html" class="hover:text-[#ea2a2a] text-sm font-medium"
+            >About Us</a
+          >
+          <a
+            href="gallery.html"
+            class="text-sm font-medium hover:text-[#ea2a2a]"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="hover:text-[#ea2a2a] text-sm font-medium"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="sm:hidden text-[#1b0e0e]">
+          <svg
+            class="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="absolute top-full left-0 w-full bg-[#fcf8f8] shadow-lg flex flex-col items-stretch transition-all duration-300 opacity-0 invisible"
+        >
+          <a
+            href="../index.html"
+            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
+            >Services</a
+          >
+          <a
+            href="about.html"
+            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
+            >About Us</a
+          >
+          <a
+            href="gallery.html"
+            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
+            >Contact</a
+          >
+        </div>
+      </header>
+
+      <section class="px-4 md:px-40 py-4 flex justify-center">
+        <div class="max-w-[960px] w-full">
+          <h1 class="text-[#1b0e0e] text-[32px] font-bold p-4">Gallery</h1>
+          <p class="text-[#994d4d] text-sm px-4 leading-relaxed">
+            Explore moments, milestones, and achievements across our various
+            departments and projects.
+          </p>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-40 pb-20 flex justify-center">
+        <div class="max-w-[960px] w-full">
+          <div
+            id="gallery-grid"
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+          ></div>
+        </div>
+      </section>
+
+      <div
+        id="lightbox"
+        class="fixed inset-0 bg-black/70 hidden justify-center items-center p-4"
+      >
+        <img id="lightbox-img" class="max-h-[90vh] rounded shadow-lg" />
+      </div>
+      <footer class="bg-[#1b0e0e] text-[#fcf8f8] px-6 sm:px-16 py-10 mt-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <!-- Brand -->
+          <div>
+            <h3 class="text-xl font-bold mb-2">RollyEdwin</h3>
+            <p class="text-sm text-[#d6cccc] leading-relaxed">
+              Delivering dependable solutions in architecture, interior design,
+              solar lighting, cleaning, fumigation, table water services, and
+              more.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-base font-semibold mb-3">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="../index.html" class="hover:text-[#ea2a2a] transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="hover:text-[#ea2a2a] transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-[#ea2a2a] transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-[#ea2a2a] transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="text-base font-semibold mb-3">Contact</h4>
+            <ul class="space-y-2 text-sm text-[#d6cccc]">
+              <li>
+                Email:
+                <span class="text-[#fcf8f8]"
+                  >rollyedwincustomercare@gmail.com</span
+                >
+              </li>
+              <li>
+                Phone:
+                <span class="text-[#fcf8f8]">
+                  08033270531, 08182348126, 09099589587</span
+                >
+              </li>
+              <li>Location: Nigeria</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-[#4b3e3e] mt-10 pt-4 text-center text-sm text-[#d6cccc]"
+        >
+          © <span id="year"></span> RollyEdwin Integrated Services Ltd. All
+          rights reserved.
+        </div>
+      </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

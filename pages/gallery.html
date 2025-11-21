@@ -24,94 +24,123 @@
   >
     <div class="relative flex flex-col min-h-screen">
       <header
-        class="mx-auto gap-[45vw] sticky top-0 z-50 flex items-center justify-between border-b border-[#f3e7e7] bg-[#fcf8f8]/95 backdrop-blur px-6 sm:px-10 py-4"
+        class="sticky top-0 z-50 w-full border-b border-b-[#f3e7e7] bg-[#fcf8f8]/95 backdrop-blur"
       >
-        <!-- Left: Logo -->
-        <div class="flex items-center gap-2 text-[#1b0e0e]">
-          <div class="size-5">
-            <img
-              src="../assets/rollyedwin-logo.jpeg"
-              alt="Logo"
-              class="w-full h-full object-contain"
-            />
-          </div>
-          <h2 class="text-lg font-bold">RollyEdwin</h2>
-        </div>
-
-        <!-- Desktop Nav -->
-        <nav class="hidden sm:flex items-center gap-9">
-          <a
-            href="../index.html"
-            class="hover:text-[#ea2a2a] text-sm font-medium"
-            >Home</a
-          >
-          <a
-            href="services.html"
-            class="hover:text-[#ea2a2a] text-sm font-medium"
-            >Services</a
-          >
-          <a href="about.html" class="hover:text-[#ea2a2a] text-sm font-medium"
-            >About Us</a
-          >
-          <a
-            href="gallery.html"
-            class="text-sm font-medium hover:text-[#ea2a2a]"
-            >Gallery</a
-          >
-          <a
-            href="contact.html"
-            class="hover:text-[#ea2a2a] text-sm font-medium"
-            >Contact</a
-          >
-        </nav>
-
-        <!-- Mobile Hamburger -->
-        <button id="menu-btn" class="sm:hidden text-[#1b0e0e]">
-          <svg
-            class="w-7 h-7"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-
-        <!-- Mobile Menu -->
         <div
-          id="mobile-menu"
-          class="absolute top-full left-0 w-full bg-[#fcf8f8] shadow-lg flex flex-col items-stretch transition-all duration-300 opacity-0 invisible"
+          class="mx-auto flex items-center justify-between px-6 sm:px-10 py-4 max-w-7xl w-full"
         >
-          <a
-            href="../index.html"
-            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
-            >Home</a
+          <!-- Left: Logo -->
+          <div class="flex items-center gap-2 text-[#1b0e0e]">
+            <div class="w-12 h-12 sm:w-14 sm:h-14">
+              <img
+                src="../assets/rollyedwin-logo.jpeg"
+                alt="Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h2 class="text-sm sm:text-xl font-bold leading-tight">
+              <span class="block sm:inline">RollyEdwin Integrated</span>
+              <span class="block sm:inline">Services Limited</span>
+            </h2>
+          </div>
+          <!-- Desktop Nav -->
+          <div class="hidden sm:flex items-center justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a
+                href="../index.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Services</a
+              >
+              <a
+                href="about.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >About Us</a
+              >
+              <a
+                href="gallery.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Gallery</a
+              >
+              <a
+                href="contact.html"
+                class="text-sm font-medium hover:text-[#ea2a2a]"
+                >Contact</a
+              >
+            </div>
+            <!-- <button
+              class="rounded-lg h-10 px-4 bg-[#ea2a2a] text-white text-sm font-bold hover:scale-105 transition-transform"
+            >
+              Get a Quote
+            </button> -->
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="menu-btn"
+            class="sm:hidden flex items-center justify-center text-[#1b0e0e] focus:outline-none"
           >
-          <a
-            href="services.html"
-            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
-            >Services</a
+            <svg
+              id="menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            class="absolute top-full left-0 w-full bg-[#fcf8f8] shadow-lg flex flex-col items-stretch transition-all duration-300 ease-in-out opacity-0 invisible"
           >
-          <a
-            href="about.html"
-            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
-            >About Us</a
-          >
-          <a
-            href="gallery.html"
-            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
-            >Gallery</a
-          >
-          <a
-            href="contact.html"
-            class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
-            >Contact</a
-          >
+            <a
+              href="../index.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Services</a
+            >
+            <a
+              href="about.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >About Us</a
+            >
+            <a
+              href="gallery.html"
+              class="text-center py-4 border-b border-[#e8dede] text-sm font-medium hover:text-[#ea2a2a]"
+              >Gallery</a
+            >
+            <a
+              href="contact.html"
+              class="text-sm font-medium text-center py-4 border-b border-[#e8dede] hover:text-[#ea2a2a] transition-colors mobile-link"
+              >Contact</a
+            >
+
+            <!-- Divider above button
+            <div class="my-2 py-2 flex justify-center">
+              <button
+                class="rounded-lg h-10 px-6 bg-[#ea2a2a] text-white text-sm font-bold hover:scale-105 transition-transform"
+              >
+                Get a Quote
+              </button>
+            </div> -->
+          </div>
         </div>
       </header>
 

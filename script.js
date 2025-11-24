@@ -116,10 +116,21 @@ const items = [
     "galleryImg (78).JPG",
     "galleryImg (79).JPG",
     "galleryImg (80).JPG",
+    "galleryImg (1).jpeg",
+    "galleryImg (2).jpeg",
+    "galleryImg (3).jpeg",
+    "galleryImg (4).jpeg",
+    "galleryImg (5).jpeg",
+    "galleryImg (6).jpeg",
+    "galleryImg (7).jpeg",
+    "galleryImg (8).jpeg",
+    "galleryImg (9).jpeg",
   ].map((src) => ({ type: "image", src })),
 
   // Video
   { type: "video", src: "buses.mp4" },
+  { type: "video", src: "video 2.mp4" },
+  { type: "video", src: "interiordesignvid.mp4" },
 ];
 
 const grid = document.getElementById("gallery-grid");

@@ -192,3 +192,24 @@ document.getElementById("lightbox").onclick = () => {
   document.getElementById("lightbox-img").style.display = "block";
   document.getElementById("lightbox").classList.add("hidden");
 };
+
+// Feedback
+function sendMail(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("fb-name").value;
+  const email = document.getElementById("fb-email").value;
+  const type = document.getElementById("fb-type").value;
+  const message = document.getElementById("fb-message").value;
+
+  const mailtoLink =
+    "mailto:rollyedwinservices@gmail.com" +
+    "?subject=" +
+    encodeURIComponent(`New ${type} from ${name}`) +
+    "&body=" +
+    encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nFeedback Type: ${type}\n\nMessage:\n${message}`
+    );
+
+  window.location.href = mailtoLink;
+}

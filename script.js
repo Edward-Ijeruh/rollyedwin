@@ -125,12 +125,16 @@ const items = [
     "galleryImg (7).jpeg",
     "galleryImg (8).jpeg",
     "galleryImg (9).jpeg",
+    "galleryImg (20).jpeg",
+    "galleryImg (21).jpeg",
+    "galleryImg (22).jpeg",
   ].map((src) => ({ type: "image", src })),
 
   // Video
   { type: "video", src: "buses.mp4" },
   { type: "video", src: "video 2.mp4" },
   { type: "video", src: "interiordesignvid.mp4" },
+  { type: "video", src: "int-des-vid-2.mp4" },
 ];
 
 const grid = document.getElementById("gallery-grid");
@@ -192,24 +196,3 @@ document.getElementById("lightbox").onclick = () => {
   document.getElementById("lightbox-img").style.display = "block";
   document.getElementById("lightbox").classList.add("hidden");
 };
-
-// Feedback
-function sendMail(e) {
-  e.preventDefault();
-
-  const name = document.getElementById("fb-name").value;
-  const email = document.getElementById("fb-email").value;
-  const type = document.getElementById("fb-type").value;
-  const message = document.getElementById("fb-message").value;
-
-  const mailtoLink =
-    "mailto:rollyedwinservices@gmail.com" +
-    "?subject=" +
-    encodeURIComponent(`New ${type} from ${name}`) +
-    "&body=" +
-    encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nFeedback Type: ${type}\n\nMessage:\n${message}`
-    );
-
-  window.location.href = mailtoLink;
-}

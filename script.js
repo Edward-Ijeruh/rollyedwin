@@ -128,6 +128,12 @@ const items = [
     "galleryImg (20).jpeg",
     "galleryImg (21).jpeg",
     "galleryImg (22).jpeg",
+    "galleryImg (24).jpeg",
+    "galleryImg (25).jpeg",
+    "galleryImg (26).jpeg",
+    "galleryImg (27).jpeg",
+    "galleryImg (28).jpeg",
+    "galleryImg (29).jpeg",
   ].map((src) => ({ type: "image", src })),
 
   // Video
